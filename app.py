@@ -61,7 +61,7 @@ def predict_crop():
         if 'N' in c:
             if (c['N'] == "low" and N > 60) or (c['N'] == "high" and N < 70) or (c['N'] == "very_high" and N < 100):
                 match = False
-        if 'P' in c and, c['P'] == "high" and P < 45:
+        if 'P' in c and c['P'] == "high" and P < 45:
             match = False
         if 'K' in c:
             if (c['K'] == "high" and K < 50) or (c['K'] == "very_high" and K < 90):
