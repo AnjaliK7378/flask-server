@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS   # <-- YE LINE ADD KARNA ZAROORI HAI
-import random
+from flask_cors import CORS   
+import joblib
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)   # <-- YE BHI ADD KARNA HAI (Android se call accept karega)
